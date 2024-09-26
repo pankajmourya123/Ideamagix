@@ -2,7 +2,7 @@
 export const host = "https://ideamagix-self.vercel.app";
 
 
-// http://localhost:8000/api/auth/register
+
 // authentication
 export const registerRoute = `${host}/api/auth/register`;
 export const loginRoute = `${host}/api/auth/login`;
