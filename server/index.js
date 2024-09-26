@@ -12,7 +12,7 @@ app.use(express.json());
 // CORS Configuration
 app.use(
   cors({
-    origin: true, // Reflects the origin of the request
+    origin: "*", // Reflects the origin of the request
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true, // This will allow credentials like cookies or headers
   })
