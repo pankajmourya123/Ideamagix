@@ -12,12 +12,14 @@ app.use(express.json());
 // CORS Configuration
 app.use(
   cors({
-    origin: "*", // Reflects the origin of the request
+    origin: [
+      "http://localhost:3000",
+      "https://lecture-schedule-module.netlify.app/",
+    ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials: true, // This will allow credentials like cookies or headers
+    credentials: true,
   })
 );
-
 
 // MongoDB Connection
 const mongoURI =
