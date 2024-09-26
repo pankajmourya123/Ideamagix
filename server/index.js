@@ -23,12 +23,13 @@ app.use(
 
 // MongoDB Connection
 const mongoURI =
-  "mongodb://127.0.0.1:27017/ideamagic";
+  "mongodb+srv://mongo:mongo@cluster0.ttetl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    dbName:"ideamagix"
   })
   .then(() => {
     console.log("DB Connection Successful");
